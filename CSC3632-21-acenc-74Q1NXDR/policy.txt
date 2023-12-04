@@ -1,0 +1,7 @@
+R1: Deny if OR(IBJ, EJD)
+R2: Permit if AND(IBJ, EJD)
+P1: DOV(R1, R2)
+R3: Permit if AND(CDP, TXE)
+R4: Deny if KVH
+P2: DOV(R3, R4)
+P: DOV(P1, P2)
